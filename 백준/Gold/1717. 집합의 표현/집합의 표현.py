@@ -10,6 +10,9 @@ def find(a):
     parent[a] = find(parent[a])  # ★★★ 이 값이 return 되었을 때 받아줄 변수가 필요함
     return parent[a]
 
+    # root = find(parent[a])
+    # return root
+
 
 # 2. union 함수 만들기
 # 두 원소의 대표 노드가 다를 경우 작은 쪽으로 대표 노드를 변경하는 함수
@@ -24,14 +27,6 @@ def union(a, b):
     # 3-2. 두 노드의 대표 노드가 다르다면 다른 집합에 있는 것이므로 합쳐야 함
     parent[root_b] = root_a
     return
-
-    '''
-    if root_a < root_b:   # a의 대표 노드가 더 작으면 a쪽으로 합침
-        parent[root_b] = root_a
-    elif root_a > root_b: # b의 대표 노드가 더 작으면 b쪽으로 합침
-        parent[root_a] = root_b
-    '''
-
 
 
 # 3. parent 배열 만들기

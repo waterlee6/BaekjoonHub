@@ -26,16 +26,6 @@ for i in arr:
         # print(f'stack에 {i}추가 : {stack}')
         # print('latest : ', latest)
 
-# # for문 다 돈 다음에 stack이 남아있다면
-# check = True
-# while stack and check == True:
-#     if stack[-1] == latest + 1:
-#         stack.pop()
-#         latest += 1
-#         # print(f'{latest}이 stack에서 빠져나감 : {stack} 22')
-#     else:
-#         check = False
-
 if latest == N:
     ans = 'Nice'
 else:

@@ -17,13 +17,6 @@ ans = []
 for i in range(1, N+1):
     arr.append(i)
 
-# print(arr.pop(K-1))
-# print(arr)
-# print(arr[K-1])
-# print(arr.pop(K-1 + K-1))
-# print(arr)
-# print(arr[K-1 + K-1])
-
 i = 0
 while arr:
     # print(arr)
